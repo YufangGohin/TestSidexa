@@ -1,0 +1,32 @@
+.Cart {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: auto;
+}
+
+.Cart__Item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid #ececec;
+}
+
+.Cart__Item p {
+  width: 33%;
+  text-align: left;
+  padding: 8px;
+}
+
+.Cart__Item p:nth-child(3n) {
+  text-align: right;
+}
+
+.Cart__Item:nth-child(2n) {
+  background-color: #efefef;
+}
+
+.Cart__Item--total {
+  border-top: 2px dashed #333;
+  border-bottom: none;
+}
